@@ -51,6 +51,7 @@ while True:
         break
 
 
-print()
+print("-------------------------------------------------------")
 print("Exited.")
-print(f"\nTotal no. of tokens used in session: {tokens_session}")
+print(f"Total no. of tokens used in session: {tokens_session}")
+print("-------------------------------------------------------")

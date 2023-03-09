@@ -10,5 +10,6 @@ A ChatGPT CLI tool.
     ```
 
 Currently using the model **"gpt-3.5-turbo"**. \
+<br>
 E.g.
 ![example](example.jpg "example")
