@@ -46,7 +46,7 @@ while True:
         
         # print ChatGPT response
         print(f"ChatGPT: {response['choices'][0]['message']['content']}")
-        print(f"Tokens used: {tokens_used} ({input_tokens} + {output_tokens})")
+        print(f"\nTokens used: {tokens_used} ({input_tokens} + {output_tokens})")
     
     except Exception as e:
         print(e)
