@@ -14,6 +14,7 @@ Currently using the model **"gpt-3.5-turbo"**. \
 E.g.
 ![example](chat.jpg "example")
 
+#### NOTE
 Be careful as the number of tokens used increases quite a bit as the list of messages keeps growing (each time all the previous prompts are also sent for the chat feature). \
 <br>
 If you wish to use it without the chat feature i.e. the AI will not remember the history and thus no context:
