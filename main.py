@@ -8,11 +8,11 @@ openai.api_key = APIKEY
 model="gpt-3.5-turbo"
 
 tokens_session = 0
-prompts = 1
+prompts = 0
 
 while True:
 
-    user_message = input(f"\n{prompts}) Ask your question (or press Q/q to quit): ")
+    user_message = input(f"\n{prompts+1}) Ask your question (or press Q/q to quit): ")
     prompts += 1
     if user_message.lower() == 'q':
         break
@@ -55,5 +55,5 @@ while True:
 
 print("-------------------------------------------------------")
 print("Exited.")
-print(f"Total no. of tokens used in session ({prompts-2} prompts): {tokens_session}")
+print(f"Total no. of tokens used in session ({prompts-1} prompts): {tokens_session}")
 print("-------------------------------------------------------")
