@@ -7,23 +7,23 @@ openai.api_key = APIKEY
 # model to use
 model="gpt-3.5-turbo"
 
-# store message history to pass each time to the API
+# store message history to pass each time to the model
 message_history = []
 
 # count no. of tokens, prompts per chat/session
 tokens = 0
 prompts = 0
 
-
 # set AI behavior at the start
-behavior = input(f"\nEnter the kind of behavior for the AI\n(for e.g. You are a helpful assistant who answers sarcastically.): ")
+behavior = input(f"\nEnter the kind of behavior for the AI (press enter to skip)\n(e.g. You are a helpful assistant who answers sarcastically): ") \
+                or "You are a helpful assistant"
 message_history.append({"role": "system", "content": behavior})
 
 print()
 for i in range(10):
     print(".")
+print("Starting chat...")
 print("-------------------------------------------------------")
-print("Starting chat..")
 
 while True:
 
@@ -60,7 +60,7 @@ while True:
             print("Response still in progress/incomplete.")
         
 
-        print(f"AI: {response}")
+        print(f"ChatGPT: {response}")
 
     except Exception as e:
         print(e)
