@@ -27,7 +27,7 @@ print("-------------------------------------------------------")
 
 while True:
 
-    user_message = input(f"\n{prompts+1}) User (press Q/q to quit): ")
+    user_message = input(f"\n\n{prompts+1}) User (press Q/q to quit): ")
     prompts += 1
 
     if user_message.lower() == 'q':
@@ -60,10 +60,10 @@ while True:
             print("Response still in progress/incomplete.")
         
 
-        print(f"ChatGPT: {response}")
+        print(f"\nChatGPT: {response}")
 
     except Exception as e:
-        print(e)
+        print(f'\n{e}')
         break
 
 
