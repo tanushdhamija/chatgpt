@@ -69,5 +69,5 @@ while True:
 
 print("-------------------------------------------------------")
 print("Exited.")
-print(f"Total no. of tokens used in chat session ({prompts-1} prompts): {tokens}")
+print(f"Total no. of tokens used in chat session ({prompts-1} {'prompt' if prompts-1 == 1 else 'prompts'}): {tokens}")
 print("-------------------------------------------------------")
