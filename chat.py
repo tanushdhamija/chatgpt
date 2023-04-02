@@ -63,7 +63,7 @@ while True:
         print(f"\nChatGPT: {response}\n\n")
 
     except Exception as e:
-        print(f'\n{e}')
+        print(f'\nNOTE: {e}')
         break
 
 
