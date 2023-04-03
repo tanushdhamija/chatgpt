@@ -1,6 +1,6 @@
 A ChatGPT CLI tool.
 
-### Usage
+#### Usage
 1. Store your OpenAI API key in a new file config.py inside a variable APIKEY.
 2. ```bash
     pip install -r requirements.txt
@@ -9,7 +9,7 @@ A ChatGPT CLI tool.
     python3 chat.py
     ```
 
-Currently using the model **"gpt-3.5-turbo"**. \
+Using the model **"gpt-3.5-turbo"**. \
 <br>
 E.g.
 ![example](chat.jpg "example")
@@ -24,4 +24,4 @@ python3 main.py
 ```
 
 #### Pricing
-gpt-3.5-turbo : $0.002 / 1K tokens (as of March 12, 2023)
+gpt-3.5-turbo : $0.002 / 1K tokens (as on March 12, 2023)
