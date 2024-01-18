@@ -1,8 +1,8 @@
-import openai
+from openai import OpenAI
 from config import APIKEY
 
 # set API key
-openai.api_key = APIKEY
+client = OpenAI(api_key=APIKEY)
 
 # model to use
 model="gpt-3.5-turbo"
@@ -36,7 +36,7 @@ while True:
     message_history.append({"role": "user", "content": user_message})
 
     try:
-        completion = openai.ChatCompletion.create(
+        completion = client.chat.completions.create(
                     model=model,
                     messages=message_history
                     )
